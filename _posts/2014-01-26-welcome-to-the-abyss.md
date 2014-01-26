@@ -79,7 +79,6 @@ Part 1 - The Abyss Engine
 
 The engine will be a plug and play library for the CoronaSDK providing many features that require questionable scripts in RPG Maker.
 
-```
 1. Unlimited map layers
 2. Unlimited tile sheets
 3. Side-view and ABS battle systems
@@ -95,14 +94,12 @@ The engine will be a plug and play library for the CoronaSDK providing many feat
 13. Hi-res graphics!
 14. Ready to use graphic assets by Pioneer Valley Games!
 15. Much, much more!
-```
 
 Part 2 - Abyss Studio
 ---------------------
 
 The pride and joy of this project will be the studio. This is the graphical tool where all the game making will happen.
 
-```
 1. Built on top of the incredible IntelliJ IDEA 13 platform
 2. Quickly add map layers and tile sheets
 3. Map layers can contain tiles or images (with configurable opacity)
@@ -111,7 +108,6 @@ The pride and joy of this project will be the studio. This is the graphical tool
 6. Integrated debugging
 7. Gorgeous interface!
 8. Much, much more!
-```
 
 Currently, I'm still in the planning and experimenting phase of the project but don't let that dissuade you. I'm no stranger to massive
 projects and I have the skills and expertise to see this through. All source code will be hosted on GitHub as I go and I welcome the
