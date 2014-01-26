@@ -116,8 +116,7 @@ this post since it is too long and too late but be sure to keep checking back as
 samples and all of that good stuff as I go.
 
 _Wiggles and Rainbows_
-Dan
----
+_Dan_
 
 [corona]: http://coronalabs.com/products/corona-sdk/
 [jetbrains]: http://jetbrains.com
