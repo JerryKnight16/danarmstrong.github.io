@@ -5,7 +5,7 @@ date:   2014-01-26 02:00:00
 categories: abyss blog
 ---
 
-The Story
+How it started
 ---------
 Welcome to the Abyss development blog. I would like to take a few moments and tell you how this all came about. To start with, my name is Dan
 and I'm the lead developer of Abyss. I'm a software engineer at the largest tech company in the world and for several years I have been working on enterprise
@@ -53,7 +53,7 @@ by surprise.
 
 Last but not least, I said I would get back to the guy who was responsible for all of this. Ryan Green is an indie game developer who is working on
 a very ambitious project. He is also the father of four, including a four year-old who has terminal cancer. His project is an amazing game called
-[That Dragon Cancer][tdc] that tells the story of their battle with cancer. I have known Ryan for a short time, but he is one of those guys that
+[That Dragon, Cancer][tdc] that tells the story of their battle with cancer. I have known Ryan for a short time, but he is one of those guys that
 never really feels like a stranger. He has a huge heart and he just projects love all around him. His game is slated to be released on Ouya this
 year but I know that development costs are not cheap by any means. And I cannot even begin to imagine the medical expenses he is suffering with
 Joel's treatments. I've decided that while my game engine and tools will be open-source, that I will charge a small fee for binary copies of the
