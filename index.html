@@ -38,7 +38,7 @@ title: Abyss Engine Blog
 </div>
 
 <div class="container">
-
+	<!-- side nav -->
 	<div class="col-lg-4">
 		<ul class="nav nav-pills nav-stacked">
 		{% for post in site.posts %}
@@ -47,9 +47,44 @@ title: Abyss Engine Blog
 		</ul>
 	</div>
 
+	<!-- main column -->
 	<div class="col-lg-8 text-left">
-		<h1><a href='{{site.posts.first.url}}'>{{site.posts.first.title}}</a></h1>
-	    <div class='body'>{{ site.posts.first.content }}</div>
-	    <a href='{{site.posts.first.url}}#disqus_thread'>Comments</a>
+		{% for post in paginator.posts %}
+		<div class="row">
+			<h1><a href="{{post.url}}">{{post.title}}</a></h1>
+			<h4>{{post.date | date_to_string}}</h4>
+	    	<div class="body">{{ post.excerpt }}</div>
+	    	<a href="{{post.url}}">Read more &raquo;</a>
+	    	<br/><br/>
+	    	<a href="{{post.url}}#disqus_thread"><i class="fui-chat"></i> Comments</a>
+	    	<hr>
+	    </div>
+	    {% endfor %}
+
+	    {% if paginator.total_pages > 1 %}
+	    <div class="col-lg-12 text-center">
+		    <div class="pagination">
+			    <ul>
+			    	{% if paginator.previous_page %}
+		    		<li class="previous"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="fui-arrow-left"></a></li>
+		  			{% endif %}
+
+		  			{% for page_num in (1..paginator.total_pages) %}
+		  				{% if page_num == paginator.page %}
+		  				<li class="active"><a href="javascript:;" onclick="return false;">{{ page_num }}</a></li>
+		  				{% elsif page_num == 1 %}
+		  				<li><a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page_num }}</a></li>
+		  				{% else %}
+		  				<li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page_num }}">{{ page_num}}</a></li>
+		  				{% endif %}
+		  			{% endfor %}
+		  			
+		  			{% if paginator.next_page %}
+		    		<li class="next"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="fui-arrow-right"></a></li>
+		  			{% endif %}
+			    </ul>
+			</div>
+		</div>
+		{% endif %}
 	</div>
 </div>

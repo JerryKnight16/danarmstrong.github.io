@@ -2,3 +2,4 @@ name: Abyss Blog
 markdown: redcarpet
 pygments: true
 status: Planning
+paginate: 5
