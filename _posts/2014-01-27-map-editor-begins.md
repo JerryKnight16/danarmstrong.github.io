@@ -28,7 +28,7 @@ My biggest hurdle right now is the format to store the maps in. In my first pass
 as native Lua tables. This has the benefit of offering amazing speed, but it takes more disk space
 and it is more difficult to parse in the editor. I have considered storing them as JSON objects, which
 takes just as much disk space, is slower to load but easier for Java to parse. Corona provides native
-JSON parsers, so this may be idea. I'm also debating on a custom binary format to store the maps. This
+JSON parsers, so this may be ideal. I'm also debating on a custom binary format to store the maps. This
 provides the smallest size but does require a parser to be written in both Lua and Java. While the 
 parser would probably be simple enough depending on the final result, that does eliminate the possibility
 of a game developer being able to edit the file with a text editor. While that is a non-issue, it does
