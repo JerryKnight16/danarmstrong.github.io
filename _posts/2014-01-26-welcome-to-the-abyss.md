@@ -5,8 +5,7 @@ date:   2014-01-26 02:00:00
 categories: abyss blog
 ---
 
-How it started
----------
+### How it started
 Welcome to the Abyss development blog. I would like to take a few moments and tell you how this all came about. To start with, my name is Dan
 and I'm the lead developer of Abyss. I'm a software engineer at the largest tech company in the world and for several years I have been working on enterprise
 cloud applications. I enjoy that work but I always like trying new things as well. Recently I met one of the most awesome guys I have ever met who asked
@@ -74,8 +73,7 @@ our lives (don't worry, I'm not here to push my beliefs on anyone). In planning 
 did and didn't like in various games and I took notes along the way. I also took notes about what I did and didn't like about RPG Maker.
 Lastly, I read Jesse's wishlist and made a lot of decisions based on his input as well. In the end, here is what we have lined up:
 
-Part 1 - The Abyss Engine
--------------------------
+### Part 1 - The Abyss Engine
 
 The engine will be a plug and play library for the CoronaSDK providing many features that require questionable scripts in RPG Maker.
 
@@ -95,8 +93,7 @@ The engine will be a plug and play library for the CoronaSDK providing many feat
 14. Ready to use graphic assets by Pioneer Valley Games!
 15. Much, much more!
 
-Part 2 - Abyss Studio
----------------------
+### Part 2 - Abyss Studio
 
 The pride and joy of this project will be the studio. This is the graphical tool where all the game making will happen.
 
