@@ -66,7 +66,7 @@
       {{ content }}
 
       <!-- Load JS here for greater good =============================-->
-      <script src="/js/jquery-1.8.3.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=1.51" ></script>
       <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
       <script src="/js/jquery.ui.touch-punch.min.js"></script>
       <script src="/js/bootstrap.min.js"></script>
@@ -107,25 +107,9 @@
 
       <!-- UserRules -->
       <script type="text/javascript">
-      var _usrp = {
-        type: "button",
-        company: "abyssengine",
-        host: "abyssengine.userrules.com",
-        mode: "advanced",
-        sso: {},
-        getVisitorId: function() {return "";},
-        getAdditionalParams: function() {return "";},
-        placement: "right",
-        color: ["#32312E", "#62615E"]
-      };
+        document.write(unescape("%3Cscript src='https://assets.hunchbuzz.com/widget/v1/right-grey.js?url=https://abyssengine.hunchbuzz.com/process/iframewidget/1107' type='text/javascript'%3E%3C/script%3E"));
+      </script>
 
-      (function(D) {
-        var _usr = D.createElement("script"), s = D.getElementsByTagName("script")[0];
-        _usr.type = "text/javascript"; _usr.async = true;
-        _usr.src = ("https:" == D.location.protocol ? "https" : "http" ) + "://dtkm4pd19nw6z.cloudfront.net/js/userrules/9a41a826e957127b4e5bfc7d140e45c4/feedback.canary.js";
-        s.parentNode.insertBefore(_usr, s);
-      })(document);
-    </script>
 
       <!-- AddThis -->
       <!-- AddThis Smart Layers BEGIN -->
