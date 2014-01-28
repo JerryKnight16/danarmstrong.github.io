@@ -29,8 +29,13 @@ IDEs from scratch before, but this time I decided that it would be best to use a
 platform and the Eclipse platform and almost settled on Netbeans when something caught my attention. I use many development tools in my work and
 for this latest project (written in Node.js) I had recently purchased a copy of WebStorm by [JetBrains][jetbrains] (the makers of IntelliJ IDEA). I have
 become a huge fan of JetBrains' products and I decided to check into whether or not they provide a platform for developing IDEs. As it would turn out, they
-do. While not as simple as the NetBeans platform, I find it significantly more powerful but before I commited my team to developing on the IntelliJ platform I 
-decided I needed to work with it a bit first.
+do. While not as simple as the NetBeans platform, I find it significantly more powerful but before I commited my team to developing on the IntelliJ platform I decided that I needed to work with it a bit first.
+
+_Update: Jan 28, 2014_
+
+I have abandoned IntelliJ for this project in favor of the Netbeans Platform. This really is the best decision.
+
+_End update_
 
 So, at the end of all of this I have made several decisions. I want to make an RPG and I want to use RPG Maker resources because I'm terrible at graphics.
 I want it to be on mobile platforms because I want to learn more about the mobile space. I need to get familiar with the IntelliJ IDEA platform. So I started 
@@ -97,7 +102,7 @@ The engine will be a plug and play library for the CoronaSDK providing many feat
 
 The pride and joy of this project will be the studio. This is the graphical tool where all the game making will happen.
 
-1. Built on top of the incredible IntelliJ IDEA 13 platform
+1. Built on top of the incredible Netbeans 8 platform
 2. Quickly add map layers and tile sheets
 3. Map layers can contain tiles or images (with configurable opacity)
 4. Excellent actor, event, object, etc. management
