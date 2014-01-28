@@ -1,5 +1,5 @@
 name: Abyss Blog
 markdown: redcarpet
 pygments: true
-status: Planning
+status: In Development
 paginate: 5
