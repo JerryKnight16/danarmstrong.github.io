@@ -17,10 +17,11 @@ try to plan in three week sprints, and I will plan one sprint ahead.
 I'm using Github as my sprint management platform. I will create a new milestone for
 each sprint and I have created a "user story" label in my issues for writing my
 user stories. As I populate this information, I will assign each user story to a
-sprint and try my hardest to knock the backlog out. You will notice my Waffle.io 
-badge in README. If you have never used Waffle.io, it is perfect for this type of
-thing. It allows greater control over Github issue flows and I find it to be much 
-nicer of an interface to stare at as well.
+sprint and try my hardest to knock the backlog out. You will notice the progress
+link in the menu. Clicking that will take you to the Abyss Studio Waffle.io page.
+If you have never used Waffle.io, it is perfect for agile development since it 
+allows greater control over Github issue flows and I find it to be much  nicer of an 
+interface to stare at as well.
 
 I urge you guys to head over to the repository by clicking the Abyss Studio button on
 the homepage and start entering user stories/feature requests. This will help me
