@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>The Switch to Netbeans</title>
+        <title>Git Flow and Other Things</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -78,58 +78,62 @@
           
       <br/><br/>
 <div class="container">
-	<h1>The Switch to Netbeans</h1>
-	<p class="text-muted">28 Jan 2014</p>
+	<h1>Git Flow and Other Things</h1>
+	<p class="text-muted">02 Feb 2014</p>
 	<div class="text-left">
-	<p>I mentioned in my first post that I would be developing Abyss Studio on the IntelliJ IDEA platform. Well, that is now
-going to change. Don&#39;t get me wrong, IntelliJ is probably the best Java IDE around, for writing code. In-fact, I feel
-like all of the JetBrains IDEs are superior to other solutions and I have used all of them. I don&#39;t want to get
-side-tracked and start talking IDEs, so let me explain my reasoning behind abandoning IntelliJ for Abyss Studio.</p>
+	<p>If you have been looking at the Abyss Studio repository and noticed that no
+commits have happened, then I am glad to correct you. I commit at least
+once a day. I&#39;m a fan of the git flow branching strategy and I have
+adopted it into this project. Right now I&#39;m working on the &quot;New Project&quot;
+feature branch. Once I complete that feature, it will be merged into
+the develop branch. The master branch won&#39;t see activity again until
+a stable release is ready. Explaining git flow is beyond the scope
+of my blog but you can read all about it at <a href="http://nvie.com/posts/a-successful-git-branching-model/">Git Flow</a>. All you
+really need to know is that I&#39;m working diligently and pushing code daily.</p>
 
-<p>From this point when I say IntelliJ, I mean as a platform, and when I say Netbeans, I mean the Netbeans Platform. Good?
-When I started developing on IntelliJ, everything looked good. I started with some tool windows (sidebars) and they went
-together quickly and without a problem. The learning curve wasn&#39;t too steep and I was quickly productive. However, when
-I started working on the map editor, things got tricky. IntelliJ assumes everything is a source file from the start and
-opens all new file types in a text editor. Well, for Abyss map files, we need them to open in a new type of editor
-altogether. After hours digging through forums, digging through the IntelliJ source code and beating my head against a
-wall, I determined that this is just not going to work out very well. I was eventually able to create a new editor window
-and open a dummy map file up. I started to feel a little better until something hit me like a brick. I have to create a
-custom project browser, project file type, runtime configuration, etc. Is this doable? I&#39;m sure it is but there is more
-to the problem. </p>
+<p>On the other front, I got my hands on a copy of a very handy book today.
+Since it looks like Netbeans is going to be my platform of choice for
+a while, I figured I should go ahead and get some documentation on it
+beyond what Google has to offer; surprisingly, good documentation on
+the platform is lacking in a lot of areas. So, I grabbed a copy of
+<em>The Definitive Guide to Netbeans Platform 7</em>. It is proving very useful
+so far and I feel like it was a very justifiable purchase. Hopefully
+it helps speed development along as I hammer out code.</p>
 
-<p>To build against IntelliJ, you have to download the entire IntelliJ source code, develop the custom components as plugins,
-test them against an official IntelliJ release, then integrate them into the IntelliJ source code, modify the source code
-to remove anything that isn&#39;t needed in the custom product, modify the build scripts to account for the changes, rebrand
-the application, build the project, run an ant task to create the binaries, then distribute. Sound fun? You bet it isn&#39;t!
-I was willing to do this, but first I decided to revisit Netbeans one last time. </p>
+<p>I&#39;m currently working on the &quot;New Project&quot; and &quot;Save Project&quot; user stories.
+These are quite important to moving into creating and editing maps. As a
+prerequisite to that I needed to be able to set the &quot;project home&quot; directory
+so that I had a default location to store newly created projects. I was
+able to implement that tonight. This resulted in a singleton to manage
+configuration data, a window to set the data and all other relevant bits.
+Just to get it out of the way, I added OS detection and the components to
+set the Corona SDK path. A bit more work is required to validate the Corona
+path but I can touch that up when I get to the corona features.</p>
 
-<p>I downloaded the latest Beta &quot;8.0&quot;, fired it up and started a new Netbeans Platform Application. Then I decided to start
-with a prototype of the map editor. With a few button clicks I had the prototype finished. A few other prototypes that
-would have been insanely complicated in IntelliJ? A few button clicks did the job again. This is just too easy! What about
-all of the cross window communication that has to take place? It is all right there and ready to go! So, for the last 
-challenges I decided to figure out how to rebrand the application and package it. In IntelliJ this took place through
-various XML files hiding all over the massive project and ant tasks. In Netbeans, I found that I could right click my
-project and click &quot;Branding&quot; and a nice window pops up letting me change everything. Then finally another right click
-on the project revealed the &quot;Package as...&quot; menu providing options for Windows, zip, Mac app, etc.</p>
+<p>Aside from that, I have also started building the new project wizard. This
+is actually turning out to be relatively simple, but there is still a bit of
+learning required to understand how to make the wizard behave exactly how I 
+want. Mostly in the tree views I&#39;m using in the wizard. I anticipate it to
+be ready in the next day or so.</p>
 
-<p>Seriously, button clicks allowed me to wireframe, rebrand and package the application in less than thirty minutes!
-The choice is a no brainer. I don&#39;t want to spend months writing boiler plate code and learning a platform when
-another platform can do it in a few nights. I would rather spend the bulk of my time writing code that is relevant
-to the engine. I&#39;m sure I will run into some things that leave me scratching my head but I&#39;m feeling really good
-about Netbeans these days. It has always been a great IDE and I feel like we will meet great success by trusting
-the platform around here.</p>
+<p>To end this, I will share a couple of ideas I&#39;ve had with the Abyss DevKit.
+I&#39;m building the wizard to be relatively agnostic to the platform so that
+I can potentially provide support for more than just Corona in the future.
+I would like to see the engine be able to export to Mobile, Web and PC
+(Mac/Win/Linux) when all is said and done. As a result, I&#39;m writing the
+ability to support this into Abyss Studio from the start. </p>
 
-<p>I know there are people that will disagree with this choice, but ultimately those people need to trust me to know
-that I&#39;m making the right decision. If you feel like I&#39;m wrong, then go try out some of the other Corona SDK IDEs
-on the market and then come talk to me. Also remember to point me to the ones that support full RPG creation with
-graphical tilemapping and all of that fun stuff.</p>
+<p>As far as DevKit versioning goes, I have decided that the best way to go about 
+updating the engine libraries is using Git directly. Since NetBeans provides a
+Git library, it shouldn&#39;t be to hard to just &quot;fetch&quot; the latest version from 
+GitHub periodically so that you guys are always up-to-date. That is still  a ways 
+out but my brain is always thinking ahead so that I&#39;m not stuck scratching my 
+head in the end.</p>
 
-<p>On another note, Jesse got me a couple of tiles to work with today so I can really start getting serious about
-writing code. It isn&#39;t a lot but it is enough for me to start knocking out the initial algorithms we will be
-using to draw maps. That alone should be enough to give you a warm fuzzy feeling. I hope to have some screenshots
-to show off by the end of the week so wish me luck!</p>
+<p>So, that is all I have for tonight. I will update you all again when I have
+more news for you.</p>
 
-<p><em>Giggles and Chainsaws</em></p>
+<p><em>Sharks and High Fives</em></p>
 
 <p><em>Dan</em></p>
 

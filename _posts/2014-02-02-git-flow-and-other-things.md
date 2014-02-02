@@ -6,26 +6,26 @@ categories: abyss blog
 ---
 
 If you have been looking at the Abyss Studio repository and noticed that no
-commits have happened, then I am glad to correct you. I commit at least
+commits have happened, then I am glad to correct you since I commit at least
 once a day. I'm a fan of the git flow branching strategy and I have
 adopted it into this project. Right now I'm working on the "New Project"
-feature branch. Once I complete that feature, it will be merged into
+feature branch and once I complete that feature, it will be merged into
 the develop branch. The master branch won't see activity again until
 a stable release is ready. Explaining git flow is beyond the scope
 of my blog but you can read all about it at [Git Flow][gitflow]. All you
 really need to know is that I'm working diligently and pushing code daily.
 
-On the other front, I got my hands on a copy of a very handy book today.
+On the other hand, I got my hands on a copy of a very handy book today.
 Since it looks like Netbeans is going to be my platform of choice for
-a while, I figured I should go ahead and get some documentation on it
+a while, I figured I should go ahead and get some literature on it
 beyond what Google has to offer; surprisingly, good documentation on
 the platform is lacking in a lot of areas. So, I grabbed a copy of
-_The Definitive Guide to Netbeans Platform 7_. It is proving very useful
-so far and I feel like it was a very justifiable purchase. Hopefully
+_The Definitive Guide to Netbeans Platform 7_ and It is proving very useful
+so far. I feel like it was a very justifiable purchase. Hopefully
 it helps speed development along as I hammer out code.
 
-I'm currently working on the "New Project" and "Save Project" user stories.
-These are quite important to moving into creating and editing maps. As a
+I'm currently working on the "New Project" and "Save Project" user stories since
+these are quite important before moving into creating and editing maps. As a
 prerequisite to that I needed to be able to set the "project home" directory
 so that I had a default location to store newly created projects. I was
 able to implement that tonight. This resulted in a singleton to manage

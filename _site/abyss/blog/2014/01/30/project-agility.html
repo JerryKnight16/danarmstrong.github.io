@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>The Switch to Netbeans</title>
+        <title>Project Agility</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -78,60 +78,33 @@
           
       <br/><br/>
 <div class="container">
-	<h1>The Switch to Netbeans</h1>
-	<p class="text-muted">28 Jan 2014</p>
+	<h1>Project Agility</h1>
+	<p class="text-muted">30 Jan 2014</p>
 	<div class="text-left">
-	<p>I mentioned in my first post that I would be developing Abyss Studio on the IntelliJ IDEA platform. Well, that is now
-going to change. Don&#39;t get me wrong, IntelliJ is probably the best Java IDE around, for writing code. In-fact, I feel
-like all of the JetBrains IDEs are superior to other solutions and I have used all of them. I don&#39;t want to get
-side-tracked and start talking IDEs, so let me explain my reasoning behind abandoning IntelliJ for Abyss Studio.</p>
+	<p>I want to take a minute talk about development practices. I know that this topic has
+been beat into the ground all over the internet, but I will try to keep it short and
+specific to Abyss. I come from an enterprise background, and that requires really
+tight schedules and strict deadlines. To help achieve these unrealistic goals, I have
+always been stuck using the Agile methodology. The terms Agile and Sprints will
+generally make any developer cringe, but they really are important concepts. Keeping
+with my best practices, Abyss will be developed in an Agile fashion. For now, I will
+try to plan in three week sprints, and I will plan one sprint ahead. </p>
 
-<p>From this point when I say IntelliJ, I mean as a platform, and when I say Netbeans, I mean the Netbeans Platform. Good?
-When I started developing on IntelliJ, everything looked good. I started with some tool windows (sidebars) and they went
-together quickly and without a problem. The learning curve wasn&#39;t too steep and I was quickly productive. However, when
-I started working on the map editor, things got tricky. IntelliJ assumes everything is a source file from the start and
-opens all new file types in a text editor. Well, for Abyss map files, we need them to open in a new type of editor
-altogether. After hours digging through forums, digging through the IntelliJ source code and beating my head against a
-wall, I determined that this is just not going to work out very well. I was eventually able to create a new editor window
-and open a dummy map file up. I started to feel a little better until something hit me like a brick. I have to create a
-custom project browser, project file type, runtime configuration, etc. Is this doable? I&#39;m sure it is but there is more
-to the problem. </p>
+<p>I&#39;m using Github as my sprint management platform. I will create a new milestone for
+each sprint and I have created a &quot;user story&quot; label in my issues for writing my
+user stories. As I populate this information, I will assign each user story to a
+sprint and try my hardest to knock the backlog out. You will notice the progress
+link in the menu. Clicking that will take you to the Abyss Studio Waffle.io page.
+If you have never used Waffle.io, it is perfect for agile development since it 
+allows greater control over Github issue flows and I find it to be much  nicer of an 
+interface to stare at as well.</p>
 
-<p>To build against IntelliJ, you have to download the entire IntelliJ source code, develop the custom components as plugins,
-test them against an official IntelliJ release, then integrate them into the IntelliJ source code, modify the source code
-to remove anything that isn&#39;t needed in the custom product, modify the build scripts to account for the changes, rebrand
-the application, build the project, run an ant task to create the binaries, then distribute. Sound fun? You bet it isn&#39;t!
-I was willing to do this, but first I decided to revisit Netbeans one last time. </p>
-
-<p>I downloaded the latest Beta &quot;8.0&quot;, fired it up and started a new Netbeans Platform Application. Then I decided to start
-with a prototype of the map editor. With a few button clicks I had the prototype finished. A few other prototypes that
-would have been insanely complicated in IntelliJ? A few button clicks did the job again. This is just too easy! What about
-all of the cross window communication that has to take place? It is all right there and ready to go! So, for the last 
-challenges I decided to figure out how to rebrand the application and package it. In IntelliJ this took place through
-various XML files hiding all over the massive project and ant tasks. In Netbeans, I found that I could right click my
-project and click &quot;Branding&quot; and a nice window pops up letting me change everything. Then finally another right click
-on the project revealed the &quot;Package as...&quot; menu providing options for Windows, zip, Mac app, etc.</p>
-
-<p>Seriously, button clicks allowed me to wireframe, rebrand and package the application in less than thirty minutes!
-The choice is a no brainer. I don&#39;t want to spend months writing boiler plate code and learning a platform when
-another platform can do it in a few nights. I would rather spend the bulk of my time writing code that is relevant
-to the engine. I&#39;m sure I will run into some things that leave me scratching my head but I&#39;m feeling really good
-about Netbeans these days. It has always been a great IDE and I feel like we will meet great success by trusting
-the platform around here.</p>
-
-<p>I know there are people that will disagree with this choice, but ultimately those people need to trust me to know
-that I&#39;m making the right decision. If you feel like I&#39;m wrong, then go try out some of the other Corona SDK IDEs
-on the market and then come talk to me. Also remember to point me to the ones that support full RPG creation with
-graphical tilemapping and all of that fun stuff.</p>
-
-<p>On another note, Jesse got me a couple of tiles to work with today so I can really start getting serious about
-writing code. It isn&#39;t a lot but it is enough for me to start knocking out the initial algorithms we will be
-using to draw maps. That alone should be enough to give you a warm fuzzy feeling. I hope to have some screenshots
-to show off by the end of the week so wish me luck!</p>
-
-<p><em>Giggles and Chainsaws</em></p>
-
-<p><em>Dan</em></p>
+<p>I urge you guys to head over to the repository by clicking the Abyss Studio button on
+the homepage and start entering user stories/feature requests. This will help me
+prioritize things much more quickly and allow me to spend more time writing code and
+less time planning. Of course, if anyone has any questions about how Agile development
+works or how it can be used in your own projects, don&#39;t be afraid to leave a comment
+and ask. I am always happy to share knowledge with others!</p>
 
 	</div>
 

@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abyss Blog</title>
+    <link>http://abyssengine.com/</link>
+    <atom:link href="http://abyssengine.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Abyss Blog</description>
+    <language>en-us</language>
+    <pubDate>Sun, 02 Feb 2014 02:19:03 -0700</pubDate>
+    <lastBuildDate>Sun, 02 Feb 2014 02:19:03 -0700</lastBuildDate>
+
+    
+    <item>
+      <title>Git Flow and Other Things</title>
+      <link>http://abyssengine.com/abyss/blog/2014/02/02/git-flow-and-other-things.html</link>
+      <pubDate>Sun, 02 Feb 2014 02:00:00 +0000</pubDate>
+      <author>Dan Armstrong</author>
+      <guid>http://abyssengine.com/abyss/blog/2014/02/02/git-flow-and-other-things</guid>
+      <description>&lt;p&gt;If you have been looking at the Abyss Studio repository and noticed that no
+commits have happened, then I am glad to correct you. I commit at least
+once a day. I&amp;#39;m a fan of the git flow branching strategy and I have
+adopted it into this project. Right now I&amp;#39;m working on the &amp;quot;New Project&amp;quot;
+feature branch. Once I complete that feature, it will be merged into
+the develop branch. The master branch won&amp;#39;t see activity again until
+a stable release is ready. Explaining git flow is beyond the scope
+of my blog but you can read all about it at &lt;a href=&quot;http://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;Git Flow&lt;/a&gt;. All you
+really need to know is that I&amp;#39;m working diligently and pushing code daily.&lt;/p&gt;
+
+&lt;p&gt;On the other front, I got my hands on a copy of a very handy book today.
+Since it looks like Netbeans is going to be my platform of choice for
+a while, I figured I should go ahead and get some documentation on it
+beyond what Google has to offer; surprisingly, good documentation on
+the platform is lacking in a lot of areas. So, I grabbed a copy of
+&lt;em&gt;The Definitive Guide to Netbeans Platform 7&lt;/em&gt;. It is proving very useful
+so far and I feel like it was a very justifiable purchase. Hopefully
+it helps speed development along as I hammer out code.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m currently working on the &amp;quot;New Project&amp;quot; and &amp;quot;Save Project&amp;quot; user stories.
+These are quite important to moving into creating and editing maps. As a
+prerequisite to that I needed to be able to set the &amp;quot;project home&amp;quot; directory
+so that I had a default location to store newly created projects. I was
+able to implement that tonight. This resulted in a singleton to manage
+configuration data, a window to set the data and all other relevant bits.
+Just to get it out of the way, I added OS detection and the components to
+set the Corona SDK path. A bit more work is required to validate the Corona
+path but I can touch that up when I get to the corona features.&lt;/p&gt;
+
+&lt;p&gt;Aside from that, I have also started building the new project wizard. This
+is actually turning out to be relatively simple, but there is still a bit of
+learning required to understand how to make the wizard behave exactly how I 
+want. Mostly in the tree views I&amp;#39;m using in the wizard. I anticipate it to
+be ready in the next day or so.&lt;/p&gt;
+
+&lt;p&gt;To end this, I will share a couple of ideas I&amp;#39;ve had with the Abyss DevKit.
+I&amp;#39;m building the wizard to be relatively agnostic to the platform so that
+I can potentially provide support for more than just Corona in the future.
+I would like to see the engine be able to export to Mobile, Web and PC
+(Mac/Win/Linux) when all is said and done. As a result, I&amp;#39;m writing the
+ability to support this into Abyss Studio from the start. &lt;/p&gt;
+
+&lt;p&gt;As far as DevKit versioning goes, I have decided that the best way to go about 
+updating the engine libraries is using Git directly. Since NetBeans provides a
+Git library, it shouldn&amp;#39;t be to hard to just &amp;quot;fetch&amp;quot; the latest version from 
+GitHub periodically so that you guys are always up-to-date. That is still  a ways 
+out but my brain is always thinking ahead so that I&amp;#39;m not stuck scratching my 
+head in the end.&lt;/p&gt;
+
+&lt;p&gt;So, that is all I have for tonight. I will update you all again when I have
+more news for you.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Sharks and High Fives&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Dan&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Project Agility</title>
+      <link>http://abyssengine.com/abyss/blog/2014/01/30/project-agility.html</link>
+      <pubDate>Thu, 30 Jan 2014 03:00:00 +0000</pubDate>
+      <author>Dan Armstrong</author>
+      <guid>http://abyssengine.com/abyss/blog/2014/01/30/project-agility</guid>
+      <description>&lt;p&gt;I want to take a minute talk about development practices. I know that this topic has
+been beat into the ground all over the internet, but I will try to keep it short and
+specific to Abyss. I come from an enterprise background, and that requires really
+tight schedules and strict deadlines. To help achieve these unrealistic goals, I have
+always been stuck using the Agile methodology. The terms Agile and Sprints will
+generally make any developer cringe, but they really are important concepts. Keeping
+with my best practices, Abyss will be developed in an Agile fashion. For now, I will
+try to plan in three week sprints, and I will plan one sprint ahead. &lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m using Github as my sprint management platform. I will create a new milestone for
+each sprint and I have created a &amp;quot;user story&amp;quot; label in my issues for writing my
+user stories. As I populate this information, I will assign each user story to a
+sprint and try my hardest to knock the backlog out. You will notice the progress
+link in the menu. Clicking that will take you to the Abyss Studio Waffle.io page.
+If you have never used Waffle.io, it is perfect for agile development since it 
+allows greater control over Github issue flows and I find it to be much  nicer of an 
+interface to stare at as well.&lt;/p&gt;
+
+&lt;p&gt;I urge you guys to head over to the repository by clicking the Abyss Studio button on
+the homepage and start entering user stories/feature requests. This will help me
+prioritize things much more quickly and allow me to spend more time writing code and
+less time planning. Of course, if anyone has any questions about how Agile development
+works or how it can be used in your own projects, don&amp;#39;t be afraid to leave a comment
+and ask. I am always happy to share knowledge with others!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Code, code, code!</title>
+      <link>http://abyssengine.com/abyss/blog/2014/01/29/code-code-code-code.html</link>
+      <pubDate>Wed, 29 Jan 2014 22:19:00 +0000</pubDate>
+      <author>Dan Armstrong</author>
+      <guid>http://abyssengine.com/abyss/blog/2014/01/29/code-code-code-code</guid>
+      <description>&lt;p&gt;Well, since I didn&amp;#39;t post an update last night, I guess I will post it today. I spent the entire evening and night
+cranking out code last night, worked more on it today and made a lot of progress. I have mostly completed the
+project loader and I&amp;#39;m implementing the project browser now. There are some quirky things about the way Netbeans
+handles communication between normal classes and windows so I&amp;#39;m overcoming a tiny inconvenience. Once the project
+browser is done I can start working on the mapping bit and update the world, yet again.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Switch to Netbeans</title>
+      <link>http://abyssengine.com/abyss/blog/2014/01/28/the-switch-to-netbeans.html</link>
+      <pubDate>Tue, 28 Jan 2014 00:00:00 +0000</pubDate>
+      <author>Dan Armstrong</author>
+      <guid>http://abyssengine.com/abyss/blog/2014/01/28/the-switch-to-netbeans</guid>
+      <description>&lt;p&gt;I mentioned in my first post that I would be developing Abyss Studio on the IntelliJ IDEA platform. Well, that is now
+going to change. Don&amp;#39;t get me wrong, IntelliJ is probably the best Java IDE around, for writing code. In-fact, I feel
+like all of the JetBrains IDEs are superior to other solutions and I have used all of them. I don&amp;#39;t want to get
+side-tracked and start talking IDEs, so let me explain my reasoning behind abandoning IntelliJ for Abyss Studio.&lt;/p&gt;
+
+&lt;p&gt;From this point when I say IntelliJ, I mean as a platform, and when I say Netbeans, I mean the Netbeans Platform. Good?
+When I started developing on IntelliJ, everything looked good. I started with some tool windows (sidebars) and they went
+together quickly and without a problem. The learning curve wasn&amp;#39;t too steep and I was quickly productive. However, when
+I started working on the map editor, things got tricky. IntelliJ assumes everything is a source file from the start and
+opens all new file types in a text editor. Well, for Abyss map files, we need them to open in a new type of editor
+altogether. After hours digging through forums, digging through the IntelliJ source code and beating my head against a
+wall, I determined that this is just not going to work out very well. I was eventually able to create a new editor window
+and open a dummy map file up. I started to feel a little better until something hit me like a brick. I have to create a
+custom project browser, project file type, runtime configuration, etc. Is this doable? I&amp;#39;m sure it is but there is more
+to the problem. &lt;/p&gt;
+
+&lt;p&gt;To build against IntelliJ, you have to download the entire IntelliJ source code, develop the custom components as plugins,
+test them against an official IntelliJ release, then integrate them into the IntelliJ source code, modify the source code
+to remove anything that isn&amp;#39;t needed in the custom product, modify the build scripts to account for the changes, rebrand
+the application, build the project, run an ant task to create the binaries, then distribute. Sound fun? You bet it isn&amp;#39;t!
+I was willing to do this, but first I decided to revisit Netbeans one last time. &lt;/p&gt;
+
+&lt;p&gt;I downloaded the latest Beta &amp;quot;8.0&amp;quot;, fired it up and started a new Netbeans Platform Application. Then I decided to start
+with a prototype of the map editor. With a few button clicks I had the prototype finished. A few other prototypes that
+would have been insanely complicated in IntelliJ? A few button clicks did the job again. This is just too easy! What about
+all of the cross window communication that has to take place? It is all right there and ready to go! So, for the last 
+challenges I decided to figure out how to rebrand the application and package it. In IntelliJ this took place through
+various XML files hiding all over the massive project and ant tasks. In Netbeans, I found that I could right click my
+project and click &amp;quot;Branding&amp;quot; and a nice window pops up letting me change everything. Then finally another right click
+on the project revealed the &amp;quot;Package as...&amp;quot; menu providing options for Windows, zip, Mac app, etc.&lt;/p&gt;
+
+&lt;p&gt;Seriously, button clicks allowed me to wireframe, rebrand and package the application in less than thirty minutes!
+The choice is a no brainer. I don&amp;#39;t want to spend months writing boiler plate code and learning a platform when
+another platform can do it in a few nights. I would rather spend the bulk of my time writing code that is relevant
+to the engine. I&amp;#39;m sure I will run into some things that leave me scratching my head but I&amp;#39;m feeling really good
+about Netbeans these days. It has always been a great IDE and I feel like we will meet great success by trusting
+the platform around here.&lt;/p&gt;
+
+&lt;p&gt;I know there are people that will disagree with this choice, but ultimately those people need to trust me to know
+that I&amp;#39;m making the right decision. If you feel like I&amp;#39;m wrong, then go try out some of the other Corona SDK IDEs
+on the market and then come talk to me. Also remember to point me to the ones that support full RPG creation with
+graphical tilemapping and all of that fun stuff.&lt;/p&gt;
+
+&lt;p&gt;On another note, Jesse got me a couple of tiles to work with today so I can really start getting serious about
+writing code. It isn&amp;#39;t a lot but it is enough for me to start knocking out the initial algorithms we will be
+using to draw maps. That alone should be enough to give you a warm fuzzy feeling. I hope to have some screenshots
+to show off by the end of the week so wish me luck!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Giggles and Chainsaws&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Dan&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Map Editor Begins</title>
+      <link>http://abyssengine.com/abyss/blog/2014/01/27/map-editor-begins.html</link>
+      <pubDate>Mon, 27 Jan 2014 02:30:00 +0000</pubDate>
+      <author>Dan Armstrong</author>
+      <guid>http://abyssengine.com/abyss/blog/2014/01/27/map-editor-begins</guid>
+      <description>&lt;p&gt;Just a quick update to cover the day. Most of my day was spent working on the site here and getting it ready
+to go. I played around with UserVoice a bit and then added AddThis. Sadly, on mobile devices, they do not
+work together because the AddThis &amp;quot;share&amp;quot; menu covers the UserVoice button. This irritated me but I eventually
+decided that the ability for you guys to share posts is more important than a contact form. At least that is
+true for the time being. In the long run, if someone needs to contact me they can always use Disqus or
+Github.&lt;/p&gt;
+
+&lt;p&gt;Aside from working on the site, I have started putting the map editor together in Abyss Studio. If there is
+one major downfall to using IntelliJ as my foundation, it is the complication found in creating a custom
+editor window. Tool windows take about 20 minutes to design, develop, test and deploy. Editor windows on the
+other hand require significantly more work. The map editor itself should go together pretty quick once I 
+get the window and all required components figured out. Luckily, I do have the IntelliJ source code
+available and it contains a semi-relevant component that I&amp;#39;m able to use as a reference.&lt;/p&gt;
+
+&lt;p&gt;So far I have the tileset window, map properties window and map layers windows mostly completed. I will just
+have to go back once the map editor window is finished and start tying them all together. The code is dirty
+at the moment, but that&amp;#39;s how it works most of the time. This is all proof-of-concept code and is subject
+to significant changes as I put all the pieces of this puzzle together.&lt;/p&gt;
+
+&lt;p&gt;My biggest hurdle right now is the format to store the maps in. In my first pass I&amp;#39;ve been keeping them
+as native Lua tables. This has the benefit of offering amazing speed, but it takes more disk space
+and it is more difficult to parse in the editor. I have considered storing them as JSON objects, which
+takes just as much disk space, is slower to load but easier for Java to parse. Corona provides native
+JSON parsers, so this may be ideal. I&amp;#39;m also debating on a custom binary format to store the maps. This
+provides the smallest size but does require a parser to be written in both Lua and Java. While the 
+parser would probably be simple enough depending on the final result, that does eliminate the possibility
+of a game developer being able to edit the file with a text editor. While that is a non-issue, it does
+bug me a bit.&lt;/p&gt;
+
+&lt;p&gt;I will most likely go with JSON when it is all said and done. If they start taking too much space then
+custom format it is. If anyone has any input concerning this matter then don&amp;#39;t hesitate to voice your
+opinion.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Hugs and Butterflies&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Dan&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Site Work!</title>
+      <link>http://abyssengine.com/abyss/blog/2014/01/26/site-work.html</link>
+      <pubDate>Sun, 26 Jan 2014 14:30:00 +0000</pubDate>
+      <author>Dan Armstrong</author>
+      <guid>http://abyssengine.com/abyss/blog/2014/01/26/site-work</guid>
+      <description>&lt;p&gt;So, I&amp;#39;ve been working diligently on the template around here and I&amp;#39;m almost happy with it. It doesn&amp;#39;t have to be anything fancy
+since it is a blog, but I definitely wasn&amp;#39;t going to stick with the default Jekyll template. As a result, I threw bootstrap
+on it, a custom theme and started playing with colors and such. I will tweak it more as I go but for now, I am happy.&lt;/p&gt;
+
+&lt;p&gt;This site is hosted on Github and is powered by the interesting &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; framework. I&amp;#39;m used to developing sites that
+are dynamic and data driven (I typically use &lt;a href=&quot;http://angularjs.org&quot;&gt;AngularJS&lt;/a&gt;), so getting used to the static nature of Jekyll is pretty
+new to me. So far, I don&amp;#39;t have any complaints; I like Jekyll.&lt;/p&gt;
+
+&lt;p&gt;I also took some time today to create a preliminary logo for Abyss that you can find on the home page. Be sure to tell me what
+you think of it. As I mentioned in my first post, I&amp;#39;m not a graphics guy, but I do try hard. Jesse has agreed to create tiles,
+characters, and other game resources but he doesn&amp;#39;t do logos and all of that. Hopefully my skills in this area are acceptable
+until I can find a guy to make the logos and icons.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/abyss-logo.png&quot; alt=&quot;My Logo&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Also, you will notice I went with Disqus for comments. Normally I would roll my own, but Jekyll is not data driven and I didn&amp;#39;t
+care to set Angular up so I went with a hosted comment solution. Make good use of it!&lt;/p&gt;
+
+&lt;p&gt;You will probably notice the site change often as I work on it. I do test locally but I also tend to push my changes and test
+them live. Don&amp;#39;t be surprised if something looks wonky. If it does give me a few minutes and refresh the page. That normally means I&amp;#39;m
+actively making changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Hugs and Unicorns&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Dan&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome to the Abyss</title>
+      <link>http://abyssengine.com/abyss/blog/2014/01/26/welcome-to-the-abyss.html</link>
+      <pubDate>Sun, 26 Jan 2014 02:00:00 +0000</pubDate>
+      <author>Dan Armstrong</author>
+      <guid>http://abyssengine.com/abyss/blog/2014/01/26/welcome-to-the-abyss</guid>
+      <description>&lt;h3&gt;How it started&lt;/h3&gt;
+
+&lt;p&gt;Welcome to the Abyss development blog. I would like to take a few moments and tell you how this all came about. To start with, my name is Dan
+and I&amp;#39;m the lead developer of Abyss. I&amp;#39;m a software engineer at the largest tech company in the world and for several years I have been working on enterprise
+cloud applications. I enjoy that work but I always like trying new things as well. Recently I met one of the most awesome guys I have ever met who asked
+me a question I had not been asked before &amp;quot;Have you ever done any game development?&amp;quot; Well, no, I never had. He proceeded to tell me about a game he is
+developing (more on that later) and it started to capture my interest. When I got home that day I started looking at various game engines and trying things
+here and there but I wasn&amp;#39;t happy with anything I found; I&amp;#39;m not an artist, I&amp;#39;m a developer. &lt;/p&gt;
+
+&lt;p&gt;Unity is amazing but too complicated since I have absolutely no skills in 3D modeling. GameSalad is too... well... GameSalad. Construct 2 is very nice, but 
+again, not really for a developer. Then I came across an old classic, RPG Maker. I could write &amp;#39;some&amp;#39; code, it was easy, and it has a ton of resources available. 
+I set out to make an RPG for my wife and soon found myself getting pretty mad at RPG Maker. So many things in the editor just didn&amp;#39;t make sense and there 
+were too many limitations. After a couple of weeks I couldn&amp;#39;t handle RPG Maker anymore. I decided to continue my search for a suitable engine. I never found 
+an engine I liked but I did find an SDK I liked. &lt;/p&gt;
+
+&lt;p&gt;I had found the &lt;a href=&quot;http://coronalabs.com/products/corona-sdk/&quot;&gt;Corona SDK&lt;/a&gt;. At first I was skeptical of what it might offer, but I quickly discovered that it had great potential. The only downfall 
+was the fact that my RPG Maker assets were in no form or fashion suitable for it. And it doesn&amp;#39;t really have any true tiling abilities out of the box. Call
+me old fashion but I like tiles. I set my RPG ambitions aside for a few days and developed a really simple game for my son (he&amp;#39;s only 19 months old). It
+was very nice working with Corona since everything was coded in Lua and the API is incredibly simple. But I still had an RPG in the back of my mind.&lt;/p&gt;
+
+&lt;p&gt;During all this time, I&amp;#39;m working on a massive project at work and as part of that project, I&amp;#39;m responsible for creating a custom IDE. I have created entire
+IDEs from scratch before, but this time I decided that it would be best to use an existing platform as my foundation. I started messing around with the Netbeans
+platform and the Eclipse platform and almost settled on Netbeans when something caught my attention. I use many development tools in my work and
+for this latest project (written in Node.js) I had recently purchased a copy of WebStorm by &lt;a href=&quot;http://jetbrains.com&quot;&gt;JetBrains&lt;/a&gt; (the makers of IntelliJ IDEA). I have
+become a huge fan of JetBrains&amp;#39; products and I decided to check into whether or not they provide a platform for developing IDEs. As it would turn out, they
+do. While not as simple as the NetBeans platform, I find it significantly more powerful but before I commited my team to developing on the IntelliJ platform I decided that I needed to work with it a bit first.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Update: Jan 28, 2014&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I have abandoned IntelliJ for this project in favor of the Netbeans Platform. This really is the best decision.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;End update&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;So, at the end of all of this I have made several decisions. I want to make an RPG and I want to use RPG Maker resources because I&amp;#39;m terrible at graphics.
+I want it to be on mobile platforms because I want to learn more about the mobile space. I need to get familiar with the IntelliJ IDEA platform. So I started 
+writing code with the Corona SDK to draw maps using RPG Maker VX Ace resources and soon found it to be working very well. Next I started writing plugins for 
+IntelliJ to handle drawing tilesets and the likes and found that to be very successful. I decided that the next logical step was to develop an entire RPG
+engine and studio to make my game. I started planning the features that I cared about and figuring out what my goals were. Since I am a huge fan of
+open source, I decided that I have to give back to the community. But that led to a slight problem; I didn&amp;#39;t have any graphics that I could give away
+with the engine.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m always a bit hesitant to discuss a project I&amp;#39;m working on before I have it ready to show, but I knew I that I had to have graphics for this engine.
+When I started playing with RPG Maker, the most amazing resource packs I found all had one thing in common; they were made by one guy over at 
+&lt;a href=&quot;http://pioneervalleygames.com&quot;&gt;Pioneer Valley Games&lt;/a&gt;. I figured that if I was going to distribute graphics with my engine, that I had to approach Jesse and see if he would be
+willing to make them. I fired off an email describing my plans and it wasn&amp;#39;t long before he was on board. What I found out was that Jesse isn&amp;#39;t only
+an awesome artist, but he is also very insightful when it comes to desireable game engines. As a guy who has tried them all and kept up with all
+of the shortcomings, he has already proven extremely helpful in building my roadmap. We are still early in our discussions, but he has consistently
+made suggestions that I hadn&amp;#39;t even considered. My goals were to basically make an improved version of RPG Maker that exported games for mobile platforms
+and that was compatible with RPG Maker resources. What is happening is that I&amp;#39;m developing an RPG engine that may very well take the indie RPG scene
+by surprise.&lt;/p&gt;
+
+&lt;p&gt;Last but not least, I said I would get back to the guy who was responsible for all of this. Ryan Green is an indie game developer who is working on
+a very ambitious project. He is also the father of four, including a four year-old who has terminal cancer. His project is an amazing game called
+&lt;a href=&quot;http://thatdragoncancer.com&quot;&gt;That Dragon, Cancer&lt;/a&gt; that tells the story of their battle with cancer. I have known Ryan for a short time, but he is one of those guys that
+never really feels like a stranger. He has a huge heart and he just projects love all around him. His game is slated to be released on Ouya this
+year but I know that development costs are not cheap by any means. And I cannot even begin to imagine the medical expenses he is suffering with
+Joel&amp;#39;s treatments. I&amp;#39;ve decided that while my game engine and tools will be open-source, that I will charge a small fee for binary copies of the
+IDE and donate those proceeds to Ryan and his family. &lt;/p&gt;
+
+&lt;p&gt;I don&amp;#39;t want it to ever appear that I&amp;#39;m out to get rich on this project because that is definitely not the case. I just want to make an RPG. As a
+result, I am making my own game engine and providing my sources to the community. Part of that involves bringing Jesse on board and making my engine
+something that he can use to make his games as well. Since none of this would have happened without Ryan asking a very simple question, I figure
+I might as well use this project to help him out a little as well. I will say that I plan to charge significantly less for this engine than
+any of the other commercial tools out there that are less powerful than what we are working on. I do not believe in releasing half-baked software
+and I believe that even people with limited funds deserve access to professional quality tools. At any rate, all of the source code will be
+available under the Apache 2.0 license so those who can&amp;#39;t purchase a binary are always free to build it themselves.&lt;/p&gt;
+
+&lt;p&gt;That went on a little longer than I had anticipated but I felt like some background was required. Now, moving on to what we are working on!
+The RPG I&amp;#39;m writing is being written specifically for my wife, and being such, I&amp;#39;m not going to give away the storyline yet. All I can say
+is that it is a deeply psychological game and it is rather dark. It also contains many Christian elements as our faith plays a big part in
+our lives (don&amp;#39;t worry, I&amp;#39;m not here to push my beliefs on anyone). In planning the game, my wife and I had many discussions about what she
+did and didn&amp;#39;t like in various games and I took notes along the way. I also took notes about what I did and didn&amp;#39;t like about RPG Maker.
+Lastly, I read Jesse&amp;#39;s wishlist and made a lot of decisions based on his input as well. In the end, here is what we have lined up:&lt;/p&gt;
+
+&lt;h3&gt;Part 1 - The Abyss Engine&lt;/h3&gt;
+
+&lt;p&gt;The engine will be a plug and play library for the CoronaSDK providing many features that require questionable scripts in RPG Maker.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Unlimited map layers&lt;/li&gt;
+&lt;li&gt;Unlimited tile sheets&lt;/li&gt;
+&lt;li&gt;Side-view and ABS battle systems&lt;/li&gt;
+&lt;li&gt;Awesome windowing system&lt;/li&gt;
+&lt;li&gt;Configurable tile size&lt;/li&gt;
+&lt;li&gt;Isometric map support&lt;/li&gt;
+&lt;li&gt;True scene management&lt;/li&gt;
+&lt;li&gt;True cutscene support&lt;/li&gt;
+&lt;li&gt;HUD components and API&lt;/li&gt;
+&lt;li&gt;Event &amp;amp; Object differentiation&lt;/li&gt;
+&lt;li&gt;Full frame movements&lt;/li&gt;
+&lt;li&gt;Compatible with RPG Maker auto-tiles&lt;/li&gt;
+&lt;li&gt;Hi-res graphics!&lt;/li&gt;
+&lt;li&gt;Ready to use graphic assets by Pioneer Valley Games!&lt;/li&gt;
+&lt;li&gt;Much, much more!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Part 2 - Abyss Studio&lt;/h3&gt;
+
+&lt;p&gt;The pride and joy of this project will be the studio. This is the graphical tool where all the game making will happen.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Built on top of the incredible Netbeans 8 platform&lt;/li&gt;
+&lt;li&gt;Quickly add map layers and tile sheets&lt;/li&gt;
+&lt;li&gt;Map layers can contain tiles or images (with configurable opacity)&lt;/li&gt;
+&lt;li&gt;Excellent actor, event, object, etc. management&lt;/li&gt;
+&lt;li&gt;Full featured source code editor&lt;/li&gt;
+&lt;li&gt;Integrated debugging&lt;/li&gt;
+&lt;li&gt;Gorgeous interface!&lt;/li&gt;
+&lt;li&gt;Much, much more!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Currently, I&amp;#39;m still in the planning and experimenting phase of the project but don&amp;#39;t let that dissuade you. I&amp;#39;m no stranger to massive
+projects and I have the skills and expertise to see this through. All source code will be hosted on GitHub as I go and I welcome the
+community to get involved and help out with code, or ideas, or music, or anything they want to contribute. I will go ahead and end
+this post since it is too long and too late but be sure to keep checking back as I will keep this blog updated with news and code
+samples and all of that good stuff as I go.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Wiggles and Rainbows&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Dan&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+
+  </channel> 
+</rss>
