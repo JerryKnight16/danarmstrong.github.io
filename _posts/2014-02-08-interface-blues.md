@@ -20,7 +20,7 @@ that they are awesome. His skills never cease to amaze me. As I'm wrapping up sp
 I'm getting pretty excited about putting a map together.
 
 What I'm currently working on is writing interfaces. Anyone who has Java experience
-knows that this is all about. Basically, wannabe classes that don't do anything.
+knows what this is all about. Basically, wannabe classes that don't do anything.
 They just define the structure that must be used by an actual class. Apparently
 Netbeans isn't happy with just classes and prefers both interfaces and classes for
 communication between modules. Interfaces aren't so bad but it is a bit annoying
